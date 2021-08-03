@@ -1,0 +1,136 @@
+
+.why-we {
+  margin-top: 50px;
+  overflow: hidden;
+  padding-bottom: 95px;
+  &__navigate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 47px;
+    width: 85px;
+    height: 50px;
+    background: #E7F0FF;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+    z-index: 100;
+    svg {
+      width: 40px;
+      height: 40px;
+      transform: rotate(180deg);
+    }
+  }
+  &-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 50px;
+    background: #E7F0FF;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+    svg {
+      width: 40px;
+      height: 40px;
+      margin-top: 15px;
+    }
+  }
+  &-sl {
+    background: none;
+    box-shadow: none;
+    svg {
+      path {
+        fill: #666874!important;
+      }
+    }
+  }
+  &-wrapper {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 110px;
+  }
+  &-slider {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-title {
+    font-weight: bold;
+    font-size: 32px;
+    display: flex; 
+    color: #232323;
+    justify-content: center;
+    align-items: center;
+  }
+  &-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+    width: 600px;
+    height: 250px;
+    filter: drop-shadow(0px 20px 55px rgba(0, 0, 0, 0.05));
+    padding: 34px 38px 46px 31px;
+    transition: .2s all;
+    &:hover {
+      background: #E7F0FF;
+      box-shadow: 0px 25px 55px rgba(231, 240, 255, 0.25);
+    }
+    &__image {
+      margin-right: 21px;
+    }
+    &__body {
+
+    }
+    &__descr {
+      margin-bottom: 36px;
+      font-size: 16px;
+      line-height: 20px;
+      color: #232323;
+      p {
+        max-width: 414px;
+      }
+    }
+    &__user-name {
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 21px;
+      color: #006DF0;
+    }
+    &__job {
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 18px;
+      color: #006DF0;
+    }
+    &__quote {
+      font-weight: 800;
+      font-size: 75px;
+      line-height: 91px;
+      color: #232323;
+      position: absolute;
+      right: 39px;
+      bottom: 27px;
+    }
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+}

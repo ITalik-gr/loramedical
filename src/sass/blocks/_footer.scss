@@ -1,0 +1,75 @@
+
+.footer {
+  background: #232323;
+  &-mob-logo {
+    display: none;
+  }
+  &-wrapper {
+    padding: 45px 0px 40px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  &-info {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 45px;
+    &__image {
+
+    }
+    &__text {
+      margin-left: 10px;
+    }
+    &__descr {
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+      margin-bottom: 25px;
+      p {
+        max-width: 600px;
+      }
+    }
+    &__copy {
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+  }
+  &-block {
+    &__title {
+      font-weight: bold;
+      font-size: 16px;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+    &__item {
+      margin-bottom: 3px;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+      a {
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        &:hover {
+          text-decoration: none;
+          color: #FFF;
+        }
+      }
+    }
+    &__tell {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+        &:hover {
+          color:#FFF;
+        }
+      }
+    }
+  }
+}

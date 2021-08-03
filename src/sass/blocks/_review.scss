@@ -1,0 +1,29 @@
+
+.review {
+  margin-top: 45px;
+  &-image {
+    margin-top: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+
+    }
+  }
+  &-title {
+    margin-top: 57px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #232323;
+  }
+  &-slider {
+    margin-top: 60px;
+    padding-bottom: 140px;
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
