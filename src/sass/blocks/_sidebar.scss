@@ -185,6 +185,9 @@
       }
     }
   }
+  a {
+    text-decoration: none;
+  }
   &-active {
     display: none;
     &__open {
@@ -217,6 +220,13 @@
     &-list {
       &__item {
 
+      }
+    }
+  }
+  &-link {
+    &-active {
+      span {
+        color: #FFE084;
       }
     }
   }
