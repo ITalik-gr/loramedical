@@ -8,13 +8,54 @@ function changeClass(e) {
 	this.querySelector('.doctor-card-info').classList.toggle('doctor-card-info__active');
 };
 
+let sidebarActiveOne = document.querySelectorAll('.sidebar-list__item-1')[0];
+let sidebarActiveTwo = document.querySelectorAll('.sidebar-list__item-2')[0];
+let sidebarActiveThree = document.querySelectorAll('.sidebar-list__item-3')[0];
+
+let sidebarCloseOne = document.querySelectorAll('.sidebar-close')[0];
+let sidebarCloseTwo = document.querySelectorAll('.sidebar-close')[1];
+let sidebarCloseThree = document.querySelectorAll('.sidebar-close')[2];
+
+let sidebarBodyOne = document.querySelectorAll('.sidebar-active-1')[0];
+let sidebarBodyTwo = document.querySelectorAll('.sidebar-active-2')[0];
+let sidebarBodyThree = document.querySelectorAll('.sidebar-active-3')[0];
+
+let sidebarBlock = document.querySelectorAll('.sidebar-list')[0];
+let sidebarBlock1 = document.querySelectorAll('.sidebar-list')[1];
+
+sidebarActiveOne.addEventListener('click', function() {
+  sidebarBodyOne.classList.add('sidebar-active__open')
+  sidebarBlock.classList.add('sidebar-list__close')
+});
+sidebarCloseOne.addEventListener('click', function() {
+  sidebarBodyOne.classList.remove('sidebar-active__open')
+  sidebarBlock.classList.remove('sidebar-list__close')
+});
+
+sidebarActiveTwo.addEventListener('click', function() {
+  sidebarBodyTwo.classList.add('sidebar-active__open')
+  sidebarBlock.classList.add('sidebar-list__close')
+});
+sidebarCloseTwo.addEventListener('click', function() {
+  sidebarBodyTwo.classList.remove('sidebar-active__open')
+  sidebarBlock.classList.remove('sidebar-list__close')
+});
+
+sidebarActiveThree.addEventListener('click', function() {
+  sidebarBodyThree.classList.add('sidebar-active__open')
+  sidebarBlock.classList.add('sidebar-list__close')
+});
+sidebarCloseThree.addEventListener('click', function() {
+  sidebarBodyThree.classList.remove('sidebar-active__open')
+  sidebarBlock.classList.remove('sidebar-list__close')
+});
 
 let navBtn = document.querySelectorAll('.nav-toggle')[0];
-let sidebarMobile = document.querySelectorAll('.sidebar-mob')[0];
+let sidebarMobile = document.querySelectorAll('.sidebar')[0];
 
 navBtn.addEventListener('click', function() {
   navBtn.classList.toggle('nav-toggle-active'),
-  sidebarMobile.classList.toggle('sidebar-mob-active')
+  sidebarMobile.classList.toggle('sidebar-mob')
 });
 
 new Swiper('.why-we-slider', {
