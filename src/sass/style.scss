@@ -154,8 +154,41 @@ button:focus {
         }
     }
 }
-
-
+.pop-up {
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(35, 35, 35, 0.911);
+    &-card {
+        background: linear-gradient(90.87deg, #EDF6F7 27.46%, #E2F4EA 87.17%);
+        width: 600px;
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        padding: 72px 35px;
+        &__title {
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 60px;
+            color: #232323;
+        }
+    }
+    &__close {
+        position: absolute;
+        cursor: pointer;
+        top: 15px;
+        right: 32px;
+    }
+}
 
 
 
