@@ -15,7 +15,9 @@
     align-items: flex-start;
     margin-right: 45px;
     &__image {
-
+      img {
+        max-width: 125px;
+      }
     }
     &__text {
       margin-left: 10px;

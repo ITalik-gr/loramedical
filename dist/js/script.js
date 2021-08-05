@@ -9,36 +9,7 @@ function changeClass(e) {
 };
 
 
-var modal = document.getElementById('pop-up');
 
-var myBtn = document.getElementsByClassName('pop-up__open');
-var close = document.getElementsByClassName('pop-up__close')[0];
-
-console.log(myBtn);
-/*
-А это в цикле прокруциваем те элементы которыми мы открываем модал окно
-и обработчик события который открывет окно
-*/
-for (var i = 0; i < myBtn.length; i++) {
-  myBtn[i].addEventListener('click', function() {
-    openModalWindow();
-  })
-}
-// это обработчик события, который в нутри этой функции выполнят ту функцию 
-//которая закрывает окно модальное
-close.addEventListener('click', function() {
-  closeModalWindow();
-})
-
-//это функция, которая открывает окно
-function openModalWindow() {
-  modal.style.display = "flex";
-}
-
-//это функция, которая закрывает окно
-function closeModalWindow() {
-  modal.style.display = "none";
-}
 
 
 
@@ -144,3 +115,33 @@ const swiper = new Swiper('.swiper-container', {
   }
 });
 
+var modal = document.getElementById('pop-up');
+
+var myBtn = document.getElementsByClassName('pop-up__open');
+var close = document.getElementsByClassName('pop-up__close')[0];
+
+console.log(myBtn);
+/*
+А это в цикле прокруциваем те элементы которыми мы открываем модал окно
+и обработчик события который открывет окно
+*/
+for (var i = 0; i < myBtn.length; i++) {
+  myBtn[i].addEventListener('click', function() {
+    openModalWindow();
+  })
+}
+// это обработчик события, который в нутри этой функции выполнят ту функцию 
+//которая закрывает окно модальное
+close.addEventListener('click', function() {
+  closeModalWindow();
+})
+
+//это функция, которая открывает окно
+function openModalWindow() {
+  modal.style.display = "flex";
+}
+
+//это функция, которая закрывает окно
+function closeModalWindow() {
+  modal.style.display = "none";
+}
