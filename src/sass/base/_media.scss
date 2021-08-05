@@ -297,7 +297,7 @@
     padding-left: 0px;
   }
   .sidebar {
-    position: absolute;
+    position: fixed;
     transform: translateX(-500vh);
     transition: .3s all;
     background: #FFFFFF;
@@ -739,6 +739,15 @@
       }
     }
   }
+  .pop-up {
+    &-card {
+      width: 540px;
+      height: 500px;
+      &__title {
+        line-height: 41px;
+      }
+    }
+  }
 }
 
 
@@ -753,7 +762,26 @@
       }
     }
   }
+  .sidebar {
+    &-mob {
+      .sidebar {
+        &-tel {
+          a {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    &-top {
+      &-list {
+        &__item {
+          max-width: 130px;
+        }
+      }
+    }
+  }
 }
+
 @media (max-width: 576px)  { //320
   .page {
     &-title {
@@ -1382,6 +1410,65 @@
       }
       &__cost {
         font-size: 15px;
+      }
+    }
+  }
+  .pop-up {
+    &__close {
+      top: 5px;
+      right: 5px;
+      width: 15px;
+    }
+    &-card {
+      width: 350px;
+      height: 350px;
+      &__title {
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 266.12px;
+      }
+      .feedback-form__block {
+        margin-top: 15px;
+      }
+      input {
+        width: 278px;
+        height: 45px;
+      }
+      label {
+        text-align: left;
+        margin-top: 11px;
+        input {
+          width: 20px;
+          height: 12px;
+        }
+      }
+      button {
+        width: 175px;
+        height: 45px;
+        font-size: 14px;
+        line-height: 152%;
+      }
+    }
+    &__bottom {
+      margin-top: 15px;
+      align-items: center;
+    }
+    &-phone {
+      &__title {
+        font-size: 11px;
+      }
+      &-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__item {
+          margin-bottom: 3px;
+          a {
+            font-size: 11px;
+            line-height: 10px;
+          }
+        }
       }
     }
   }
